@@ -2,9 +2,11 @@
   "name": "twitch",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Timerns/twitchStats/issues"
   },
-  "homepage": "https://github.com/Timerns/twitchStats#readme"
+  "homepage": "https://github.com/Timerns/twitchStats#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
 }
